@@ -1,18 +1,27 @@
 # ============================================
-# CONFIGURAÇÕES - EDITE APENAS ESTA SEÇÃO - Leo Vieira sixcore.com.br
+# CONFIGURAÇÕES - EDITE APENAS ESTA SEÇÃO
 # ============================================
 
 # Nome do provedor/link (usado no comment das rotas)
 :local provedor "Avanza"
 
 # Configurações de Email
-:local emailDestino "seuemail@hotmail.com"
-:local emailAssunto "GMC L1 ATIVO Link Avanza"
+:local emailDestino "valmirgmc@hotmail.com"
 
 # Configurações do Telegram
-:local telegramBotID "80:AAGXlDJrEbcvstZHGd5KJN8KrugGUqPPJ9k"
-:local telegramChatID "8384826"
-:local telegramMensagem "O link AVANZA MATRIZ voltou a pingar, o status agora e UP"
+:local telegramBotID "8022301518:AAGXlDJrEbcvstZHGd5KJN8KrugGUqPPJ9k"
+:local telegramChatID "8384885526"
+
+# ============================================
+# COLETA AUTOMÁTICA DE INFORMAÇÕES
+# ============================================
+
+# Captura o nome do roteador automaticamente
+:local nomeRoteador [/system identity get name]
+
+# Monta as mensagens com o nome do roteador
+:local emailAssunto ("[$nomeRoteador] GMC L1 ATIVO Link $provedor")
+:local telegramMensagem ("Roteador: $nomeRoteador%0AO link $provedor voltou a pingar, o status agora e UP")
 
 # ============================================
 # EXECUÇÃO - NÃO ALTERAR ABAIXO
