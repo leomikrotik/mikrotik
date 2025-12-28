@@ -9,4 +9,4 @@ Este e meu whatsapp (31) 97153-4214
 #Comunidade Ubiquiti SIXCORE
 #Comunidade Huawei SIXCORE
 
-SIXCORE BLACK tenha acesso a tudos treinamentos 
+SIXCORE BLACK tenha acesso a todos treinamentos 
